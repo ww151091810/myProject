@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+     <script src="../js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container" style="padding: 100px 50px 10px;">
+        <button type="button" class="btn btn-default popover-show" title="Popover title" data-container="body" data-toggle="popover" data-placement="left" data-content="左侧的 Popover 中的一些内容 —— show 方法">
+            左侧的 Popover
+        </button>
+        <button type="button" class="btn btn-primary popover-hide" title="Popover title" data-container="body" data-toggle="popover" data-placement="top" data-content="顶部的 Popover 中的一些内容 —— hide 方法">
+            顶部的 Popover
+        </button>
+        <button type="button" class="btn btn-success popover-destroy" title="Popover title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="底部的 Popover 中的一些内容 —— destroy 方法">
+            底部的 Popover
+        </button>
+        <button type="button" class="btn btn-warning popover-toggle" title="Popover title" data-container="body" data-toggle="popover" data-placement="right" data-content="右侧的 Popover 中的一些内容 —— toggle 方法">
+            右侧的 Popover
+        </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p class="popover-options">
+            <a href="#" type="button" class="btn btn-warning" title="" data-container="body" data-toggle="popover" data-content="
+         <h4>Popover 中的一些内容 —— options 方法</h4>">
+            Popover
+        </a>
+        </p>
+        <script>
+        $(function() { $('.popover-show').popover({title: 'sssss', delay:{ show: 500, hide: 100 }}); });
+        $(function() { $('.popover-hide').popover('hide'); });
+        $(function() { $('.popover-destroy').popover('destroy'); });
+        $(function() { $('.popover-toggle').popover('toggle'); });
+        $(function() { $(".popover-options a").popover({ 
+        	html: true ,
+        	title: 'sssss', 
+        	delay:{ show: 2000, hide: 2000 }
+            });
+        });
+        </script>
+    </div>
+</body>
+
+</html>

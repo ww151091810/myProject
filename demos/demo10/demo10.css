@@ -1,0 +1,126 @@
+body {
+    background-color: #E2E2E2
+}
+
+.divider {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid red
+}
+
+.left-container {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    padding-left: 10px;
+    width: 300px;
+    height: 600px;
+}
+
+.left-container .tab-list {
+    list-style: none;
+    background-color: #B3B3B3
+}
+
+.left-container .tab-list li {
+    padding: 5px;
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.left-container .tab-list li.active {
+    background-color: #fff
+}
+
+.left-container .tab-list li a {
+    text-decoration: none;
+    font-size: .16rem;
+    color: #585858;
+}
+
+.left-container .tab-list li a:hover {
+    color: #F51D79;
+}
+
+.left-container .tab-list li a:after {
+    content: '/';
+    margin-left: 2px;
+    margin-right: 2px
+}
+
+.left-container .tab-list li a:last-child:after {
+    content: '';
+}
+
+.left-container .menu-detail {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 600;
+    height: 600px;
+    display: none;
+}
+
+.left-container .menu-detail.show {
+    display: block;
+}
+
+.left-container .menu-detail .menu-history {
+    padding: 0 10px;
+    font-size: .16rem;
+    color: #fff;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.left-container .menu-detail .menu-history div, 
+.left-container .menu-detail .menu-history ul {
+    display: inline-block;
+    color: #000
+}
+
+.left-container .menu-detail .menu-history-list {
+    list-style: none;
+    padding: 10px 15px;
+    font-size: 0
+}
+
+.left-container .menu-detail .menu-history-list li {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: #6D7A88;
+    width: auto;
+    font-size: .16rem;
+    color: #fff;
+}
+
+.left-container .menu-detail .menu-history-list li span {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.left-container .menu-detail .menu-history-list li span:last-child {
+    margin-left: 10px;
+}
+
+.left-container .menu-detail .detail-wrapper {
+    display: none;
+}
+
+.left-container .menu-detail .detail-wrapper.show {
+    display: block;
+}
+
+.main-container {
+    padding: 10px;
+    flex: 1;
+    vertical-align:middle;
+    text-align: center;
+}

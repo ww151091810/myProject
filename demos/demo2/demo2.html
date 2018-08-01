@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo2 Document</title>
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="demo2.css">
+	<script type="text/javascript" src="demo2.js"></script>
+</head>
+<body>
+	<div class="container">
+		<table id="table" class="table-border">
+			<thead>
+				<tr>
+					<th> </th>
+					<th>ID</th>
+					<th>分类名</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody class="info-tb">
+				<tr>
+					<td>1</td>
+					<td>001</td>
+					<td>美食</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>002</td>
+					<td>新闻</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>003</td>
+					<td>八卦</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>004</td>
+					<td>体育</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="backup" class="backup" style="display: none;"></div>
+		<div id="confirm-popover" class="confirm-popover" style="display: none;">
+			<div class="popover-header">
+				<span class="popover-title">信息</span>
+				<span class="popover-close">X</span>
+			</div>
+			<div class="popover-body">确定删除此分类？</div>
+			<div class="popover-foot">
+				<div></div>
+				<div></div>
+				<div class="btn-confirm btn-blue">确认</div>
+				<div class="btn-cancel btn-red">取消</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

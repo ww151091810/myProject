@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo1 Document</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="demo1.css">
+    <script type="text/javascript" src="demo1.js"></script>
+</head>
+
+<body>
+    <!-- 文本输入 -->
+    <div class="container">
+        <div class="password-wrap">
+            <div class="text-label">当前密码：</div>
+            <input type="password" class="password-input" onporpertychange="">
+            <div class="password-popover" style="display: none;">
+            	<div class="password-info">当前密码不能为空</div>
+            	<div class="password-arrow" ></div>
+            </div>
+        </div>
+        <div class="password-wrap">
+            <div class="text-label">新密码：</div>
+            <input type="password" class="password-input">
+            <div class="text-tip">6到16个字符</div>
+            <!-- 新密码输入弹框 -->
+            <div class="password-popover" style="display: none;">
+            	<div class="password-info">新密码格式不正确,6到16个字符</div>
+            	<div class="password-arrow" ></div>
+            </div>
+        </div>
+        <div class="password-wrap">
+            <div class="text-label">确认密码：</div>
+            <input type="password" class="password-input">
+             <div class="password-popover" style="display: none;">
+            	<div class="password-info">两次输入密码不一样</div>
+            	<div class="password-arrow" ></div>
+            </div>
+        </div>
+        <div class="password-confirm">确认修改</div>
+    </div>
+    <!-- 确认文本弹框 -->
+    <div class="popover" style="display: none;"></div>
+</body>
+
+</html>

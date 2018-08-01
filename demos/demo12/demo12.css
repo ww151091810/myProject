@@ -1,0 +1,77 @@
+.search-container {
+	position: relative;
+	top: 100px;
+	margin-left: 100px;
+	width: 200px;
+	height: 30px;
+	vertical-align: middle;
+}
+
+.search {
+	position: relative;
+	width: 200px;
+	height: 100%;
+	padding: 0 5px;
+	line-height: 30px;
+	font-size: .16rem;
+	color: #939393;
+	background-color: #FFFFFF;
+	border: 1px solid #D8D8D8;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.search.active {
+	border-color: #64FDF8;
+}
+
+.search-container>span {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	color: #939393
+}
+
+.search-container>span.active {
+	-webkit-transform: rotate(180deg); /* flip horizontally 180deg*/
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    -webkit-transition: all 300ms ease-out 0.2s; /* CSS3 transition. 0.2s delay */
+    -moz-transition: all 300ms ease-out 0.2s;
+    transition: all 300ms ease-out 0.2s;
+}
+
+.search-container .list {
+	display: none;
+	position: absolute;
+	top: 40px;
+	list-style: none;
+	float: left;
+	width: 120px;
+	height: 250px;
+	border: 1px solid #D8D8D8;
+	border-radius: 5px;
+}
+
+.search-container .list#province {
+	left: 0;
+}
+
+.search-container .list#city {
+	left: 120px;
+	border-left: none;
+}
+
+.search-container .list:last-child {
+	left: 240px;
+	border-left: none;
+}
+
+.search-container .list li {
+	padding: 5px 10px;
+	font-size: .16rem;
+	color: #939393;
+	text-align: center;
+	cursor: pointer;
+}
+

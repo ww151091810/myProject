@@ -1,0 +1,83 @@
+.container {
+    margin-top: 40px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.tab-list {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    width: 400px;
+    height: auto;
+    font-size: 0;
+    line-height: 30px;
+}
+
+.tab-list li {
+    flex: 1;
+    padding: 10px 5px;
+    border-top: 1px solid #E4E4E4;
+    border-left: 1px solid #E4E4E4;
+    border-bottom: 1px solid #F8602A;
+    font-size: .20rem;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.tab-list li:last-child {
+    border-right: 1px solid #E4E4E4;
+}
+
+.tab-list li.active {
+    border: 1px solid #F8602A;
+    border-bottom-color: transparent;
+}
+
+.tab-list li.active .list-title {
+    color: #F8602A;
+}
+
+.tab-list li .list-label {
+    padding: 5px;
+    font-size: .4rem;
+    font-weight: 600
+}
+
+.icon-shoujichongzhi {
+    color: #609DF7;
+}
+
+.icon-shouye {
+    color: #FFA138;
+}
+
+.icon-zuche {
+    color: #2ACDF9;
+}
+
+.icon-youxichongzhi {
+    color: #DBF930;
+}
+
+.tab-list li .list-title {
+    margin-top: 5px;
+    font-size: .18rem;
+}
+
+.intro-wrapper {
+    position: relative;
+    top: -1px;
+    left: 0;
+    display: none;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    border: 1px solid #F8602A;
+    border-top: none;
+}
+
+.intro-wrapper.active {
+    display: block;
+}

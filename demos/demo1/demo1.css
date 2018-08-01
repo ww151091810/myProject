@@ -1,0 +1,91 @@
+.container {
+    margin-top: 50px;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 0.17rem;
+    color: #707070;
+}
+
+.container .password-wrap {
+    position: relative;
+    width: 400px;
+    height: auto;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+.password-wrap .text-label {
+    display: inline-block;
+    width: 30%;
+    height: 20px;
+    line-height: 20px;
+    text-align: right;
+}
+
+.password-wrap input {
+    height: 24px;
+    line-height: 24px;
+    border: 1px solid #B8B6B6;
+    border-radius: 3px;
+}
+
+input.input-warning {
+    border-color: red;
+}
+
+.password-wrap .text-tip {
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.14rem;
+}
+
+.container .password-popover {
+    display: block;
+    position: absolute;
+    left: 31%;
+    bottom: 24px;
+}
+
+.password-popover .password-info {
+	width: 140px;
+    height: auto;
+    padding: 5px 10px; 
+    font-size: .14rem;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+}
+
+.password-popover .password-arrow {
+	margin-left: 10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #000 transparent transparent transparent;
+}
+
+.container .password-confirm {
+    padding: 5px;
+    margin: 10px 0 0 100px;
+    width: 100px;
+    background-color: #26C7A5;
+    font-size: .2rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.popover {
+	position: fixed;
+	top: 50%;
+	right: 50%;
+	width: auto;
+	height: auto;
+	max-width: 400px;
+	padding: 10px;
+	background-color: #000;
+	font-size: .18rem;
+	color: #fff;
+}

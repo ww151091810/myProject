@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Demo3 Document</title>
+	<link rel="stylesheet" href="../../css/main.css">
+	<link rel="stylesheet" href="demo3.css">
+	<script type="text/javascript" src="demo3.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div style="margin:30px 0;">
+			<div class="btn-delete btn-blue" >删除</div>
+			<div class="btn-add btn-red">添加</div>
+			<div class="clearfloat"></div>
+		</div>
+
+		<table id="table" class="table-border">
+			<thead>
+				<tr>
+					<th> <input type="checkbox" id="checkAll" class="checkbox" value="" ></th>
+					<th>ID</th>
+					<th>登录名</th>
+					<th>手机</th>
+					<th>邮箱</th>
+					<th>角色</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody class="attach-tb">
+				<tr>
+					<td><input type="checkbox" class="checkbox" value="" ></td>
+					<td>1</td>
+					<td>admin1</td>
+					<td>12345677654</td>
+					<td>1111@qq.com</td>
+					<td>超级管理员</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete disabled">删除</div>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="checkbox" value="" ></td>
+					<td>2</td>
+					<td>admin2</td>
+					<td>12345677654</td>
+					<td>2111@qq.com</td>
+					<td>管理员</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="checkbox" value="" ></td>
+					<td>3</td>
+					<td>admin3</td>
+					<td>12345677654</td>
+					<td>3111@qq.com</td>
+					<td>管理员</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" class="checkbox" value="" ></td>
+					<td>4</td>
+					<td>admin4</td>
+					<td>12345677654</td>
+					<td>4111@qq.com</td>
+					<td>管理员</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+					<tr>
+					<td><input type="checkbox" class="checkbox" value="" ></td>
+					<td>5</td>
+					<td>admin5</td>
+					<td>12345677654</td>
+					<td>5111@qq.com</td>
+					<td>管理员</td>
+					<td>
+						<div class="btn-blue">编辑</div>
+						<div class="btn-red delete">删除</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="backup" class="backup" style="display: none;"></div>
+		<div id="confirm-popover" class="popover" style="display: none;">
+			<div class="popover-header">
+				<span class="popover-title">信息</span>
+				<span class="popover-close">X</span>
+			</div>
+			<div class="popover-body">确定删除此分类？</div>
+			<div class="popover-foot">
+				<div></div>
+				<div></div>
+				<div class="btn-confirm btn-blue">确认</div>
+				<div class="btn-cancel btn-red">取消</div>
+			</div>
+		</div>
+		<div id="add-popover" class="popover" style="display: none;">
+			<div class="popover-header">
+				<span class="popover-title">信息</span>
+				<span class="popover-close">X</span>
+			</div>
+			<div class="popover-body">
+				 <div class="body-wrap">
+		            <div class="text-label">登录名</div>
+		            <input type="text" id="username" class="username" onporpertychange="">
+		            <div class="password-popover" style="display: none;">
+		            	<div class="password-info">当前密码不能为空</div>
+		            	<div class="password-arrow" ></div>
+		            </div>
+       			 </div>
+       			 <div class="body-wrap">
+		            <div class="text-label">手机</div>
+		            <input type="text" id="tel" onporpertychange="">
+		            <div class="password-popover" style="display: none;">
+		            	<div class="password-info">当前密码不能为空</div>
+		            	<div class="password-arrow" ></div>
+		            </div>
+       			 </div>
+       			  <div class="body-wrap">
+		            <div class="text-label">邮箱</div>
+		            <input type="text" id="email" onporpertychange="">
+		            <div class="password-popover" style="display: none;">
+		            	<div class="password-info">当前密码不能为空</div>
+		            	<div class="password-arrow" ></div>
+		            </div>
+       			 </div>
+       			  <div class="body-wrap">
+		            <div class="text-label">角色</div>
+		            <input type="text" id="type" onporpertychange="">
+		            <div class="password-popover" style="display: none;">
+		            	<div class="password-info">当前密码不能为空</div>
+		            	<div class="password-arrow" ></div>
+		            </div>
+       			 </div>
+       			 <div class="body-wrap">
+       			 	 <div class="text-label">审核状态</div>
+       			 	<div class="checkbox">
+       			 		<input id="checkboxInput" type="checkbox" name="" value="1" />
+						<label for="checkboxInput"></label>
+					</div>
+       			 </div>
+			</div>
+			<div class="popover-foot">
+				<div></div>
+				<div></div>
+				<div class="btn-confirm btn-blue">确认</div>
+				<div class="btn-cancel btn-red">取消</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <form id="frm" method="post" enctype="multipart/form-data" action="/upload.do">
+        <input type="file" name="files[]" id="file_input" />
+    </form>
+    <div class="uploadBtn" onclick="UploadUtil.test()" style="background:unset;margin-right: 30px; border: 1px solid #ddd;text-align:center;padding-right: 20px;">
+        上传文件
+    </div>
+    <!-- 上传 -->
+</body>
+
+</html>
