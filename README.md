@@ -1,1 +1,5 @@
 # myProject
+
+npm install
+
+gulp
